@@ -1,0 +1,6 @@
+{
+  "name": "Luki Charms",
+  "description": "An ultra luxury, premium, elegant, and modern e-commerce boutique for high-end bracelets and jewelry in Pakistan.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

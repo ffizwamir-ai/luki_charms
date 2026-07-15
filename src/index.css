@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Playfair Display", Georgia, serif;
+  --font-sans: "Inter", system-ui, sans-serif;
+}
+
+/* Custom premium visual style adjustments */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-down {
+  animation: fadeInDown 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Premium Bento Grid glassmorphic styling cards */
+.bento-glass {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 32px;
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.bento-glass:hover {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.18);
+  transform: translateY(-3px);
+  box-shadow: 0 15px 30px -10px rgba(147, 51, 234, 0.15);
+}
+
+.bento-gradient-pink {
+  background: linear-gradient(135deg, rgba(236, 72, 153, 0.12), rgba(147, 51, 234, 0.12));
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(236, 72, 153, 0.2);
+  border-radius: 32px;
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.bento-gradient-pink:hover {
+  background: linear-gradient(135deg, rgba(236, 72, 153, 0.2), rgba(147, 51, 234, 0.2));
+  border-color: rgba(236, 72, 153, 0.35);
+  transform: translateY(-3px);
+  box-shadow: 0 15px 35px -10px rgba(236, 72, 153, 0.25);
+}
+
+.bento-gradient-purple {
+  background: linear-gradient(135deg, rgba(74, 29, 100, 0.3), rgba(45, 10, 78, 0.3));
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 32px;
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.bento-gradient-purple:hover {
+  background: linear-gradient(135deg, rgba(74, 29, 100, 0.4), rgba(45, 10, 78, 0.4));
+  border-color: rgba(255, 255, 255, 0.18);
+  transform: translateY(-3px);
+  box-shadow: 0 15px 35px -10px rgba(74, 29, 100, 0.25);
+}
+
+.bento-button-accent {
+  background: linear-gradient(to right, #ec4899, #9333ea);
+  box-shadow: 0 10px 20px -5px rgba(236, 72, 153, 0.3);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.bento-button-accent:hover {
+  transform: scale(1.03);
+  box-shadow: 0 12px 25px -3px rgba(236, 72, 153, 0.45);
+}
